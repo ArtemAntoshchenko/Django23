@@ -18,7 +18,7 @@ class Car(models.Model):
     brand=models.CharField()
     color=models.CharField()
     speed=models.CharField()
-    owner=models.ForeignKey(Owner, on_delete=models.CASCADE)
+    owner=models.ForeignKey(Owner, on_delete=models.CASCADE, primary_key=True)
 
 
 class Author(models.Model):

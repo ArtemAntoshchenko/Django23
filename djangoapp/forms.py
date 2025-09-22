@@ -9,7 +9,6 @@ class AccountForm(forms.ModelForm):
     class Meta:
         model=Account
         fields=['id', 'password', 'email']
-        exclude=['student']
 
 class StudentForm(forms.ModelForm):
     class Meta:
